@@ -15,8 +15,12 @@ A sample XML file is included under sample_xml/.
 1. Activate virtual environment  
    ```bash
    source .venv/bin/activate
-2. Install dependencies : 'pip install -r requirements.txt'
-3. Run service 'python3 xml_query_service.py'
+2. Install dependencies
+   ```bash
+   pip install -r requirements.txt
+4. Run service
+   ```bash
+   python3 xml_query_service.py
 
 
 ### Query format:
