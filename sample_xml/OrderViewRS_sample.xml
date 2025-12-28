@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OrderViewRS>
+  <MessageDoc>
+    <Name>Order View Response</Name>
+    <RefVersionNumber>1.0</RefVersionNumber>
+    <Created>2025-12-06T10:00:00Z</Created>
+  </MessageDoc>
+
+  <Party>
+    <Sender>
+      <Name>NuFlights</Name>
+      <IATA_Number>NF-001</IATA_Number>
+    </Sender>
+  </Party>
+
+  <Response>
+    <Orders>
+      <Order OrderID="ORD-1001" Status="CONFIRMED">
+        <Customer>
+          <Name>Joviyal</Name>
+          <Email>jov@example.com</Email>
+          <Phone>+1234567890</Phone>
+        </Customer>
+        <OrderItems>
+          <OrderItem>
+            <ItemID>ITM-001</ItemID>
+            <Description>Flight Ticket - Economy</Description>
+            <Quantity>1</Quantity>
+            <UnitPrice currency="USD">199.99</UnitPrice>
+          </OrderItem>
+          <OrderItem>
+            <ItemID>ITM-002</ItemID>
+            <Description>Extra Baggage</Description>
+            <Quantity>1</Quantity>
+            <UnitPrice currency="USD">30.00</UnitPrice>
+          </OrderItem>
+        </OrderItems>
+        <Total currency="USD">229.99</Total>
+      </Order>
+
+      <Order OrderID="ORD-1002" Status="PENDING">
+        <Customer>
+          <Name>Ann Rose</Name>
+          <Email>ann.rose@example.com</Email>
+          <Phone>+1987654321</Phone>
+        </Customer>
+        <OrderItems>
+          <OrderItem>
+            <ItemID>ITM-003</ItemID>
+            <Description>Flight Ticket - Business</Description>
+            <Quantity>1</Quantity>
+            <UnitPrice currency="USD">599.00</UnitPrice>
+          </OrderItem>
+        </OrderItems>
+        <Total currency="USD">599.00</Total>
+      </Order>
+
+      <Order OrderID="ORD-1003" Status="CANCELLED">
+        <Customer>
+          <Name>Hope Salvatore</Name>
+          <Email>hope.salvatore@example.com</Email>
+          <Phone>+447700900123</Phone>
+        </Customer>
+        <OrderItems>
+          <OrderItem>
+            <ItemID>ITM-004</ItemID>
+            <Description>Flight Ticket - Economy</Description>
+            <Quantity>2</Quantity>
+            <UnitPrice currency="USD">180.00</UnitPrice>
+          </OrderItem>
+        </OrderItems>
+        <Total currency="USD">360.00</Total>
+      </Order>
+    </Orders>
+  </Response>
+</OrderViewRS>
